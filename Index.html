@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Be My Valentine 💗</title>
+<title>Sois ma Valentine 💗</title>
 
 <style>
 body{
@@ -63,14 +63,14 @@ button{
 
 <h1>Veux-tu être ma Valentine ? 💗</h1>
 
-<button id="OUI" onclick="OUI()">OUI 😍</button>
-<button id="no">NO 🙈</button>
+<button id="yes" onclick="yes()">OUI 😍</button>
+<button id="no">NON 🙈</button>
 
 <div id="msg"></div>
 
 <script>
 const no=document.getElementById("no");
-const yesBtn=document.getElementById("oui");
+const yesBtn=document.getElementById("yes");
 let size=22;
 
 no.addEventListener("mouseover",()=>{
@@ -81,15 +81,15 @@ no.addEventListener("mouseover",()=>{
     yesBtn.style.fontSize=size+"px";
 });
 
-function OUI(){
+function yes(){
     document.getElementById("msg").innerHTML=
-    "Trop Tard 😏💗<br>Tu es officiellement MON Valentin 😍🌹";
+    "Trop tard 😏💗<br>Tu es officiellement MA Valentine 😍🌹";
 
     no.style.display="none";
     yesBtn.style.display="none";
 }
 
-// Hearts
+// Coeurs
 setInterval(()=>{
     let h=document.createElement("div");
     h.className="heart";
@@ -105,8 +105,4 @@ setInterval(()=>{
 
 </body>
 </html>
-
-
-
-
 
